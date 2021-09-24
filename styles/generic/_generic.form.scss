@@ -1,0 +1,45 @@
+.form {
+}
+
+.form__textbox-field {
+    margin-bottom: $global-spacing-unit;
+}
+
+.form__label {
+    @include para;
+    display: block;
+    line-height: 100%;
+    margin-bottom: $global-spacing-unit-small;
+}
+
+.form__textbox {
+    @include para;
+    background-color: $color-form-input-bg;
+    border: 1px solid $color-form-input-border;
+    color: $color-form-input-text;
+    line-height: 100%;
+    outline: none;
+    padding: $global-spacing-unit;
+    width: 100%;
+}
+
+.form__textarea {
+    @include para;
+    background-color: $color-form-input-bg;
+    border: 1px solid $color-form-input-border;
+    color: $color-form-input-text;
+    resize: none;
+    outline: none;
+    padding: $global-spacing-unit;
+    margin: 0;
+    width: 100%;
+}
+
+.form__error {
+    border: 1px solid $color-form-validation-border-error;
+}
+
+.form__validation--error {
+    color: $color-form-validation-text-error;
+    padding: $global-spacing-unit;
+}

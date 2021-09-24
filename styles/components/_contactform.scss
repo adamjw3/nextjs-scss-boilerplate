@@ -1,0 +1,5 @@
+.c-contact-form {
+    display: grid;
+    grid-template-columns: [main-start] repeat(1, minmax(0, gridColtoRem(600, 1))) [main-end];
+    margin-top: $global-spacing-unit-xlarge;
+}

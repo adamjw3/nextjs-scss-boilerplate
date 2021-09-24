@@ -1,0 +1,137 @@
+// =============================================================================
+// Type Styles
+// =============================================================================
+
+// Web Fonts
+// -----------------------------------------------------------------------------
+//
+// Purpose: Web fonts used throughout the site
+//
+//
+// 1. Avenir Next Bold
+// 2. Avenir Next Light
+// 3. Icomoon
+//
+// -----------------------------------------------------------------------------
+
+// 1
+@font-face {
+    font-family: 'Raleway Black';
+    src: url('/fonts/Raleway-Black.woff') format('woff');
+}
+
+@mixin font-raleway-black() {
+    font-family: 'Raleway Black', Arial;
+}
+
+// 2
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('/fonts/Raleway-Bold.woff') format('woff');
+}
+
+@mixin font-raleway-bold() {
+    font-family: 'Raleway Bold', Arial;
+}
+
+@font-face {
+    font-family: 'Raleway Light';
+    src: url('/fonts/Raleway-light.woff') format('woff');
+}
+
+@mixin font-raleway-light() {
+    font-family: 'Raleway Light', Arial;
+}
+
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url('/fonts/Raleway-medium.woff') format('woff');
+}
+
+@mixin font-raleway-medium() {
+    font-family: 'Raleway Medium', Arial;
+}
+
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('/fonts/Raleway-regular.woff') format('woff');
+}
+
+@mixin font-raleway-regular() {
+    font-family: 'Raleway Regular', Arial;
+}
+
+// 3
+@font-face {
+    font-family: 'icomoon';
+    src: url('/fonts/icomoon.eot?cwi28p');
+    src: url('/fonts/icomoon.eot?#iefixcwi28p') format('embedded-opentype'), url('/fonts/icomoon.woff?cwi28p') format('woff'), url('/fonts/icomoon.ttf?cwi28p') format('truetype'),
+        url('/fonts/icomoon.svg?cwi28p#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Icon Fonts
+// -----------------------------------------------------------------------------
+//
+// Purpose: Using icomoon for all our icon font needs
+//
+//
+// 1.
+//
+// -----------------------------------------------------------------------------
+
+.icomoon {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-download:before {
+    content: '\e907';
+}
+.icon-facebook:before {
+    content: '\ea91';
+}
+.icon-instagram:before {
+    content: '\ea92';
+}
+.icon-twitter:before {
+    content: '\ea97';
+}
+.icon-youtube:before {
+    content: '\ea9d';
+}
+.icon-linkedin:before {
+    content: '\eac9';
+}
+.icon-pinterest:before {
+    content: '\ead1';
+}
+.icon-burger:before {
+    content: '\e900';
+}
+.icon-close:before {
+    content: '\e901';
+}
+.icon-arrow-down:before {
+    content: '\e902';
+}
+.icon-arrow-left:before {
+    content: '\e903';
+}
+.icon-arrow-right:before {
+    content: '\e904';
+}
+.icon-arrow-up:before {
+    content: '\e905';
+}
+.icon-tick:before {
+    content: '\e906';
+}
