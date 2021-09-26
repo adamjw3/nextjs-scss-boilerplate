@@ -17,19 +17,16 @@ export default function handler(req, res) {
         };
 
         try {
-            sgMail
+            return sgMail
                 .send(email)
                 .then(() => {
-                    console.log('res', res.json);
-                    return res;
+                    return res.status(200).json();
                 })
                 .catch((error) => {
-                    console.log('error', error);
                     return res.status(500).send(error);
                 });
         } catch (error) {
-            res.json(error);
-            return res.status(405).end();
+            return res.status(405).send(error);
         }
     }
 

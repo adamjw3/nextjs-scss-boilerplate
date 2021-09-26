@@ -20,29 +20,33 @@ function ContactForm() {
                 email: Yup.string().email('Invalid email address').required('Required'),
                 more: Yup.string().required('Required'),
             })}
-            onSubmit={async (values, { setSubmitting }) => {
+            onSubmit={async (values, { setSubmitting, resetForm, setStatus }) => {
                 setSubmitting(true);
-                const response = await fetch('/api/contact', {
-                    body: JSON.stringify({
-                        name: values.name,
-                        phone: values.phone,
-                        email: values.email,
-                        more: values.more,
-                    }),
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    method: 'POST',
-                });
-                const data = await response.json();
-                setSubmitting(false);
-                console.log('response 1', data);
+                try {
+                    const response = await fetch('/api/contact', {
+                        body: JSON.stringify({
+                            name: values.name,
+                            phone: values.phone,
+                            email: values.email,
+                            more: values.more,
+                        }),
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        method: 'POST',
+                    });
+                    await response;
+                    resetForm({});
+                    setStatus({ success: true });
+                } catch (error) {
+                    setStatus({ success: false });
+                    setSubmitting(false);
+                    setErrors({ submit: error.message });
+                }
             }}
         >
             {(props) => {
-                const { values, setFieldValue } = props;
-                console.log('props', props);
-                console.log('values', values);
+                const { status } = props;
                 return (
                     <div className="c-contact-form">
                         <Form className="form">
@@ -54,12 +58,12 @@ function ContactForm() {
                                 Submit
                             </button>
                         </Form>
-                        {values.success && (
+                        {status && status.success && (
                             <div>
                                 <p>Your enquiry has been successfully submitted.</p>
                             </div>
                         )}
-                        {values.nosend && (
+                        {status && !status.success && (
                             <div>
                                 <p>OOPS, something went wrong but we know about it. please contact us via email or phone</p>
                             </div>
