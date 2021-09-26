@@ -3,7 +3,7 @@ import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 
 import TextAreaField from './textAreaField';
-import TextField from './textfield';
+import TextField from './textField';
 
 function ContactForm() {
     return (
