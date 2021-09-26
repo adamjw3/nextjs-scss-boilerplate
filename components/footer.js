@@ -2,7 +2,7 @@ import React from 'react';
 import FancyLink from './fancylink';
 function Footer() {
     return (
-        <div className="c-footer">
+        <div className="c-footer" data-scroll-section>
             <div className="l-grid">
                 <div className="l-grid c-footerinner">
                     <div className="c-footerlogo">

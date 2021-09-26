@@ -3,7 +3,7 @@ import FancyLink from './fancylink';
 
 function Header() {
     return (
-        <div className="c-header-header">
+        <div className="c-header-header" data-scroll-section>
             <div className="l-grid">
                 <div className="c-header-headerinner">
                     <FancyLink destination="/" a11yText="text" label="Next js Boilerplate" extraClasses="c-header-logo" />
