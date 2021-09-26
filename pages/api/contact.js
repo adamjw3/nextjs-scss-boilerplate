@@ -29,7 +29,9 @@ export default function handler(req, res) {
                 });
         } catch (error) {
             res.json(error);
-            res.status(405).end();
+            return res.status(405).end();
         }
     }
+
+    return;
 }

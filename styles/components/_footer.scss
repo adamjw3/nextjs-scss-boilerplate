@@ -7,15 +7,16 @@
 
 .c-footerinner {
     grid-column: main-start / main-end;
-    display: grid;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .c-footerlogo {
-    grid-column: 1 / span 4;
     margin-bottom: $global-spacing-unit-small;
+    width: 100px;
 
     @include media('>tablet') {
-        grid-column: 1 / span 2;
         margin-bottom: 0;
     }
 
@@ -25,28 +26,20 @@
 }
 
 .c-footer-links {
-    grid-column: 1 / span 12;
     display: flex;
     align-self: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 
     @include media('>tablet') {
-        grid-column: 3 / span 12;
+        width: auto;
+    }
+
+    &:last-of-type {
+        margin-left: auto;
     }
 
     ul {
-        display: flex;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: 100%;
-
-        @include media('>tablet') {
-            flex-grow: 0;
-            flex-shrink: 0;
-            flex-basis: auto;
-        }
     }
 
     li {

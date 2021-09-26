@@ -5,7 +5,7 @@
     @include media('>tablet') {
         // main-start to main-end must be fixed value in rem or pixels
         column-gap: toRem(20);
-        grid-template-columns: [bleed-start] minmax(1rem, 1fr) [main-start] repeat(12, minmax(0, gridColtoRem(1300, 12))) [main-end] minmax(1rem, 1fr) [bleed-end];
+        grid-template-columns: [bleed-start] minmax(2rem, 1fr) [main-start] repeat(12, minmax(0, gridColtoRem(1300, 12))) [main-end] minmax(2rem, 1fr) [bleed-end];
     }
 }
 

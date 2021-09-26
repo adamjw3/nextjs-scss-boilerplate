@@ -25,6 +25,8 @@ function Footer() {
                                 <FancyLink destination="/" a11yText="Twitter" label="Twitter" />
                             </li>
                         </ul>
+                    </div>
+                    <div className="c-footer-links">
                         <ul>
                             <li>
                                 Maintainded by&nbsp;
