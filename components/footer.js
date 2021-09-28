@@ -1,5 +1,6 @@
 import React from 'react';
 import FancyLink from './fancylink';
+
 function Footer() {
     return (
         <div className="c-footer" data-scroll-section>

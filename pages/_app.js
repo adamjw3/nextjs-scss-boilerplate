@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';

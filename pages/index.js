@@ -9,7 +9,6 @@ export default function Home() {
     return (
         <Layout>
             <NextSeo title="Home page" />
-
             <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-maincontent ">
                 <motion.div variants={fade}>
                     <div data-scroll-section>

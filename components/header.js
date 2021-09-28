@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import FancyLink from './fancylink';
 
+/**
+ * General component description in JSDoc format. Markdown is *supported*.
+ */
+
 function Header() {
     return (
         <div className="c-header-header" data-scroll-section>

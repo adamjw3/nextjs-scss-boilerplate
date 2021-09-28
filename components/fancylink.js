@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 /**
@@ -12,3 +14,10 @@ export default function FancyLink({ destination, a11yText, label, extraClasses }
         </Link>
     );
 }
+
+FancyLink.propTypes = {
+    destination: PropTypes.string,
+    a11yText: PropTypes.string,
+    label: PropTypes.string,
+    extraClasses: PropTypes.string,
+};

@@ -4,7 +4,12 @@ module.exports = {
     title: 'Styleguide',
     version,
     components: './components/**/*.js', // index.js
+    ignore: ['./components/layout.js'],
     require: ['./styles/main.scss'],
+    skipComponentsWithoutExample: true,
+    template: {
+        favicon: './public/favicon.ico',
+    },
     webpackConfig: {
         module: {
             rules: [

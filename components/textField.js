@@ -1,3 +1,4 @@
+import React from 'react';
 import { useField } from 'formik';
 
 const TextField = ({ label, ...props }) => {
@@ -9,7 +10,7 @@ const TextField = ({ label, ...props }) => {
 
     return (
         <div className="form__textbox-field">
-            <label htmlFor={props.id || props.name} className="form__label">
+            <label htmlFor={props.name} className="form__label">
                 {label}
             </label>
             <input className={cssClass} {...field} {...props} />
