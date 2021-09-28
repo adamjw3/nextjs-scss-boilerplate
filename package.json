@@ -29,10 +29,10 @@
         "css-loader": "^3.2.0",
         "eslint": "7.32.0",
         "eslint-config-next": "11.1.2",
-        "react-styleguidist": "8.0.6",
+        "react-styleguidist": "^11.1.7",
         "sass": "^1.42.1",
         "sass-loader": "^12.1.0",
-        "style-loader": "^1.0.1",
-        "webpack": "4.28.4"
+        "style-loader": "^3.3.0",
+        "webpack": "^5.54.0"
     }
 }

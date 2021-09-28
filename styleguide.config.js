@@ -1,9 +1,10 @@
 const { version } = require('./package.json');
+var webpack = require('webpack');
 module.exports = {
     title: 'Styleguide',
     version,
-    components: 'components/**/*.js', // index.js
-    require: ['styles/main.scss'],
+    components: './components/**/*.js', // index.js
+    require: ['./styles/main.scss'],
     webpackConfig: {
         module: {
             rules: [
@@ -18,5 +19,10 @@ module.exports = {
                 },
             ],
         },
+        plugins: [
+            new webpack.DefinePlugin({
+                process: { env: {} },
+            }),
+        ],
     },
 };
