@@ -6,7 +6,9 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "styleguide": "npx styleguidist server",
+        "styleguide-build": "npx styleguidist build"
     },
     "dependencies": {
         "@sendgrid/mail": "^7.4.7",
@@ -18,11 +20,19 @@
         "react": "17.0.2",
         "react-dom": "17.0.2",
         "react-locomotive-scroll": "^0.2.0",
-        "sass": "^1.42.1",
         "yup": "^0.32.9"
     },
     "devDependencies": {
+        "@babel/core": "7.2.2",
+        "@babel/preset-react": "7.0.0",
+        "babel-loader": "8.0.5",
+        "css-loader": "^3.2.0",
         "eslint": "7.32.0",
-        "eslint-config-next": "11.1.2"
+        "eslint-config-next": "11.1.2",
+        "react-styleguidist": "8.0.6",
+        "sass": "^1.42.1",
+        "sass-loader": "^12.1.0",
+        "style-loader": "^1.0.1",
+        "webpack": "4.28.4"
     }
 }
