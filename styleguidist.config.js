@@ -1,6 +1,6 @@
 const { version } = require('./package.json');
 module.exports = {
-    title: 'Styleguidist Tutorial',
+    title: 'Styleguide',
     version,
     components: 'components/**/*.js', // index.js
     require: ['styles/main.scss'],
