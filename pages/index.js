@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
 import { motion } from 'framer-motion';
 import FancyLink from '../components/fancylink';
@@ -11,10 +11,8 @@ export default function Home() {
             <NextSeo title="Home page" />
             <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-maincontent ">
                 <motion.div variants={fade}>
-                    <div data-scroll-section>
-                        <h1 className="heading" data-scroll>
-                            Home
-                        </h1>
+                    <div>
+                        <h1 className="heading">Home</h1>
                         <br />
                         <p className="para">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum lectus eu faucibus accumsan. Nulla erat metus, sagittis et dolor id, ultrices venenatis metus.

@@ -11,7 +11,7 @@ function Contact() {
             <NextSeo title="Contact page" />
             <motion.div initial="initial" animate="enter" exit="exit" className="l-grid-maincontent">
                 <motion.div variants={fade}>
-                    <div data-scroll-section>
+                    <div>
                         <h1 className="heading">Contact</h1>
                         <br />
                         <p className="para">
