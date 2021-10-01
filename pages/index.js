@@ -4,8 +4,12 @@ import { motion } from 'framer-motion';
 import FancyLink from '../components/fancylink';
 import { fade } from '../helpers/transitions';
 import Layout from '../components/layout';
+import play from '../playground';
 
 export default function Home() {
+    useEffect(() => {
+        play();
+    }, []);
     return (
         <Layout>
             <NextSeo title="Home page" />
